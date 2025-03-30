@@ -169,7 +169,7 @@ void PrintFileResult (List<double> values, string docType)
 
 void DailyRevenueXML()
 {
-    string XMLpath = Path.Combine("Resources","dados.xml" ); //usei caminho relativo para funcionar em outras máquinas
+    string XMLpath = Path.Combine(AppContext.BaseDirectory, "dados.xml"); //usei caminho relativo para funcionar em outras máquinas
     List<double> values = new List<double>();
     string verifyElement = "";
     double value;
@@ -202,7 +202,7 @@ void DailyRevenueXML()
 
 void DailyRevenueJSON()
 {
-    string JSONpath = Path.Combine("Resources", "dados.json");
+    string JSONpath = Path.Combine(AppContext.BaseDirectory, "dados.json");
     List<double> values = new List<double>();
 
     try
